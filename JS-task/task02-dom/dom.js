@@ -3,7 +3,7 @@ function changeOuterLinks() {
     const links = document.querySelectorAll('nav#link-list a');
     
     for (let i = 0; i < links.length; i++) { 
-        if (links[i].innerText.includes('outer-link') === true) {
+        if (links[i].innerHTML.includes('outer-link')) {
             links[i].setAttribute('target', '_blank');
             links[i].innerHTML = `<strong>` +  links[i].innerHTML + `</strong>`;
         } 
