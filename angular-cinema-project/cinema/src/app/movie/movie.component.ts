@@ -13,14 +13,14 @@ export class MovieComponent implements OnInit {
   movie: Movie = new Movie();
 
   constructor() {
-
   }
 
   ngOnInit(): void {
   }
 
   saveMovie(): any {
-    return {};
+    return {
+    };
   }
 
 }
